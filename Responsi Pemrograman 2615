@@ -30,8 +30,8 @@ namespace ResponsiPemrograman2615
         {
             Console.WriteLine("No NIK/Nama                   Gaji Bulanan");
             Console.WriteLine("------------------------------------------");
-            karyawan pertama = new karyawan("190302123"," Paijo", 3000000);
-            karyawan kedua = new karyawan("190302124"," Jono", 2000000);
+            karyawan pertama = new karyawan("190302123"," Akbar", 3000000);
+            karyawan kedua = new karyawan("190302124"," Nurrizky", 2000000);
             Console.WriteLine("");
             Console.WriteLine("Asyik Kenaikan Gaji 10%");
             Console.WriteLine("");
