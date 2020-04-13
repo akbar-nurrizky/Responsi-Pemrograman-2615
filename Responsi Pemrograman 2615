@@ -1,0 +1,44 @@
+using System;
+
+namespace ResponsiPemrograman2615
+{
+    class Program
+    {
+        public class karyawan
+        {
+            public string NIK { get; set; }
+            public string Nama { get; set; }
+            public int GajiBulanan { get; set; }
+            public karyawan(string nik="No Numb",string nama="No Name",int gajibulanan = 0)
+            {
+                NIK = nik;
+                Nama = nama; 
+                GajiBulanan = gajibulanan;
+
+                Console.WriteLine("{0}{1}                 {2}", NIK,Nama, GajiBulanan);
+            }
+        public void naikgaji()
+            {
+                double Gaji2 = 0, naikgaji = 0;
+                naikgaji =GajiBulanan * 0.1;
+                Gaji2 = GajiBulanan + naikgaji;
+
+                Console.WriteLine("{0}{1}                   {2}",NIK, Nama, Gaji2);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("No NIK/Nama                   Gaji Bulanan");
+            Console.WriteLine("------------------------------------------");
+            karyawan pertama = new karyawan("190302123"," Paijo", 3000000);
+            karyawan kedua = new karyawan("190302124"," Jono", 2000000);
+            Console.WriteLine("");
+            Console.WriteLine("Asyik Kenaikan Gaji 10%");
+            Console.WriteLine("");
+            Console.WriteLine("No NIK/Nama                   Gaji Bulanan");
+            Console.WriteLine("------------------------------------------");
+            pertama.naikgaji();
+            kedua.naikgaji();
+        }
+    }
+}
